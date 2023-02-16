@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    /* font-family: 'Tiro Gurmukhi', serif; */
+    background-color: rgb(230, 0, 0);
+}
+
+nav {
+    font-family: 'Mulish', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img {
+    width: 45px;
+    padding: 0 8px;
+}
+
+.container {
+    min-height: 75vh;
+    background-color: rgb(163, 74, 74);
+    color: white;
+    font-family: 'Tiro Gurmukhi', serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('./image/cover.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.botton {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.icons i:active {
+    color: red;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 50px;
+    margin: 0 23px;
+    border-radius: 43px;
+}
+
+.timeStamp {
+    margin-right: 20px;
+}
+
+.timeStamp i {
+    cursor: pointer;
+}
+
+.songinfo {
+    position: absolute;
+    left: 8vw;
+}
+
+.songinfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media (max-width:720px) {
+    .songItem {
+        height: 70px;
+        font-size: 15px;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width:550px) {
+    .songItem {
+        width: 100%;
+        font-size: 11px;
+    }
+}
